@@ -1,0 +1,47 @@
+{
+  "name": "inist-roadmap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext=.js ./index.js ./test/*.js ./lib/*.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inist-CNRS/node-inist-roadmap.git"
+  },
+  "keywords": [],
+  "contributors": [
+    {
+      "name": "Nicolas Thouvenin",
+      "url": "https://github.com/touv"
+    },
+    {
+      "name": "Stéphane Gully",
+      "url": "https://github.com/kerphi"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inist-CNRS/node-inist-roadmap/issues"
+  },
+  "homepage": "https://github.com/Inist-CNRS/node-inist-roadmap#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "ezs": "^1.1.0",
+    "ezs-basics": "^1.0.0"
+  },
+  "dependencies": {
+    "caporal": "^0.5.0",
+    "marked": "^0.3.6",
+    "trello": "^0.7.0"
+  }
+}
