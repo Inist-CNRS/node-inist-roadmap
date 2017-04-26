@@ -1,5 +1,5 @@
-const getAllItems = require('./lib/trello-get-roadmap.js');
+const milestones = require('./lib/milestones.js');
 
 module.exports = {
-  getAllItems,
+  milestones,
 };

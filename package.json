@@ -36,12 +36,12 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-    "ezs": "^1.1.0",
-    "ezs-basics": "^1.0.0"
+    "caporal": "^0.5.0"
   },
   "dependencies": {
-    "caporal": "^0.5.0",
+    "latinize": "^0.4.0",
     "marked": "^0.3.6",
+    "moment": "^2.18.1",
     "trello": "^0.7.0"
   }
 }

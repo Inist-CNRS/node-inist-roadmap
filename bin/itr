@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+const prog = require('caporal');
+const { milestones } = require('..');
+
+const isURL = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/;
+const isString = /^\w+$/;
+
+prog
+  .version('1.0.0')
+  .description('Get cards from Raodmap Board')
+  .argument('<url>', 'Trello URL', isURL)
+  .option('--token <token>', 'Trello token', isString)
+  .option('--key <key>', 'Trello keytoken', isString)
+  .action((args, options, logger) => {
+    milestones(args.url, options).then((values) => {
+      process.stdout.write(JSON.stringify(values));
+    }).catch((error) => {
+      logger.error(error);
+    });
+  });
+
+prog.parse(process.argv);
