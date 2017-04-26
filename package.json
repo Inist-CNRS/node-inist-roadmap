@@ -42,6 +42,6 @@
     "latinize": "^0.4.0",
     "marked": "^0.3.6",
     "moment": "^2.18.1",
-    "trello": "^0.7.0"
+    "trello-promise": "^1.0.7"
   }
 }
