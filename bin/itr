@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 const prog = require('caporal');
+const { version } = require('../package.json');
 const { milestones } = require('..');
 
 const isURL = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/;
 const isString = /^\w+$/;
 
 prog
-  .version('1.0.0')
-  .description('Get cards from Raodmap Board')
+  .version(version)
+  .description('Get all milestones from a roadmap board.')
   .argument('<url>', 'Trello URL', isURL)
   .option('--token <token>', 'Trello token', isString)
   .option('--key <key>', 'Trello keytoken', isString)
