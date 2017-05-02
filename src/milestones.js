@@ -1,7 +1,7 @@
-const Trello = require('trello-promise');
-const latinize = require('latinize');
-const marked = require('marked');
-const tlnp = require('./trello-list-name-parser.js');
+import Trello from 'trello-promise';
+import latinize from 'latinize';
+import marked from 'marked';
+import tlnp from './trello-list-name-parser';
 
 function convertLists(accu, list) {
   accu[list.id] = {
@@ -70,7 +70,7 @@ module.exports = function millestones(boardLink, options) {
           card.projectKey = boardID;
           return card;
         })
-        .sort((a, b) =>  b.date - a.date);
+        .sort((a, b) => b.date - a.date);
       resolve(boardCards);
     }));
   } catch (err) {
