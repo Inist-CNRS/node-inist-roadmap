@@ -1,52 +1,52 @@
 {
-	"name": "inist-roadmap",
-	"version": "1.1.0",
-	"description": "",
-	"main": "./lib/index.js",
-	"scripts": {
-		"test": "mocha",
-		"lint": "eslint --ext=.js ./test/*.js ./src/*.js",
-		"build": "babel src --out-dir lib",
-		"prepublish": "npm run build"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Inist-CNRS/node-inist-roadmap.git"
-	},
-	"keywords": [],
-	"contributors": [
-		{
-			"name": "Nicolas Thouvenin",
-			"url": "https://github.com/touv"
-		},
-		{
-			"name": "Stéphane Gully",
-			"url": "https://github.com/kerphi"
-		}
-	],
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/Inist-CNRS/node-inist-roadmap/issues"
-	},
-	"homepage": "https://github.com/Inist-CNRS/node-inist-roadmap#readme",
-	"devDependencies": {
-		"babel-cli": "^6.24.1",
-		"babel-eslint": "^7.2.1",
-		"babel-preset-es2015": "^6.24.1",
-		"babel-preset-stage-3": "^6.24.1",
-		"caporal": "^0.5.0",
-		"chai": "^3.5.0",
-		"eslint": "^3.19.0",
-		"eslint-config-airbnb": "^14.1.0",
-		"eslint-plugin-import": "^2.2.0",
-		"eslint-plugin-jsx-a11y": "^4.0.0",
-		"eslint-plugin-react": "^6.10.3",
-		"mocha": "^3.1.2"
-	},
-	"dependencies": {
-		"latinize": "^0.4.0",
-		"marked": "^0.3.6",
-		"moment": "^2.18.1",
-		"trello-promise": "^1.0.7"
-	}
+  "name": "inist-roadmap",
+  "version": "2.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint --ext=.js ./test/*.js ./src/*.js",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inist-CNRS/node-inist-roadmap.git"
+  },
+  "keywords": [],
+  "contributors": [
+    {
+      "name": "Nicolas Thouvenin",
+      "url": "https://github.com/touv"
+    },
+    {
+      "name": "Stéphane Gully",
+      "url": "https://github.com/kerphi"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inist-CNRS/node-inist-roadmap/issues"
+  },
+  "homepage": "https://github.com/Inist-CNRS/node-inist-roadmap#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "caporal": "^0.5.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "latinize": "^0.4.0",
+    "marked": "^0.3.6",
+    "moment": "^2.18.1",
+    "trello-promise": "^1.0.7"
+  }
 }
