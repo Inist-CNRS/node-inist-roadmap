@@ -1,6 +1,6 @@
 import Trello from 'trello-promise';
 import latinize from 'latinize';
-import marked from 'marked';
+import MarkdownIt from 'markdown-it';
 import tlnp from './trello-list-name-parser';
 
 function convertLists(accu, list) {
@@ -23,12 +23,13 @@ function convertLists(accu, list) {
 
 function convertCards(accu, card) {
   const obj = {};
+  const markdown = new MarkdownIt();
   obj.idCard = card.id;
   obj.idList = card.idList;
   // eslint-disable-next-line
   obj.isRange = card.due ? false : true; // si on a une due date alors c'est pas un range de date
   obj.title = card.name;
-  obj.desc = marked(card.desc);
+  obj.desc = markdown.render(card.desc);
   obj.trelloLink = card.url;
   obj.image_small =
     card.attachments.length > 0 && card.attachments[0].previews[0]
